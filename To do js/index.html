@@ -25,6 +25,17 @@
                 <input type="button" id="modal-close" value="Close" onclick="ToggleModal()"/>
             </div>
         </div>
+    </div>
+    <div class="item-modal" id="item-modal">
+        <div class="box">
+            <h2>Add New Item</h2>
+            <input type="text" id="item-input" placeholder="Enter the item name">
+            <div class="down">
+            <input type="button" value="Add" id="item-submit" onclick="addItem()">
+            <input type="button" value="Close" id="modal-close" onclick="ToggleItemModal()">
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
