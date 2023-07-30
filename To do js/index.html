@@ -2,40 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App js</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div id="single-task" class="single-task-modal">
-        <div class="topbar">
-            <button onclick="ToggleSingleTaskModal()" class="onebtn">Back</button>
-            <p id="single-task-name"></p>
-            <button onclick="ToggleItemModal()" class="onebtn">Add New item</button>
+ <header>
+   
+    <div> <span id="task">Tasks</span>
+      <span id="list">List</span></div>
+    
+    <div id="first"> <div class="firsticon"><span  id="plus">+</span> </div> Add item</div>
+ </header>
+
+ <header class="Top">
+   
+  <div class="block">
+        <span id="backIcon" class="material-symbols-outlined">
+           
+            </span>
+            <div id="back">Back</div>
         </div>
-        <div id="singleTaskCard" class="singleTaskCard"></div>
-    </div>
-    <div class="modal" id="modal">
-        <div class="box">
-            <h2>Add new Task</h2>
-            <input type="text" id="task-Input" placeholder="enter name" class="input_box">
-            <div class="down">
-                <input type="button" value="add" id="task-submit" onclick="addTask()"/>
-                <input type="button" id="modal-close" value="Close" onclick="ToggleModal()"/>
-            </div>
-        </div>
-    </div>
-    <div class="item-modal" id="item-modal">
-        <div class="box">
-            <h2>Add New Item</h2>
-            <input type="text" id="item-input" placeholder="Enter the item name">
-            <div class="down">
-            <input type="button" value="Add" id="item-submit" onclick="addItem()">
-            <input type="button" value="Close" id="modal-close" onclick="ToggleItemModal()">
-            </div>
-        </div>
-    </div>
+    <div id="title"></div>
+    <div id="ToptoAdd" class="firsticon"><span  id="plus">+</span> </div> 
+ </header>
+
+ <p  id="caption" class="caption">No items in the todo list</p>
+
+
+ <section></section>
+ 
+
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
