@@ -163,7 +163,7 @@ function creatingSubTask(subTaskDesc, parentNode) {
 // back btn --------------->
 
 let back = document.getElementsByClassName("block")[0];
-let headtoAdd = document.getElementById("headtoAdd");
+let headtoAdd = document.getElementById("ToptoAdd");
 
 back.addEventListener("click", () => {
   pg1();
